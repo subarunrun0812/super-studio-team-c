@@ -11,11 +11,10 @@ const Rewards: React.FC = () => {
   return (
     <div className="rewards-container">
       <div className="rewards-header">
-        <h1>(ふつうの)ショップのリワード</h1>
         <div className="status">{status}</div>
       </div>
       <div className="points">
-        <span className="points-total">{points}★</span>
+        <h2 className="points-total">{points}★</h2>
       </div>
       <div className="rewards-progress-bar">
         <div className="progress-bar-outer">

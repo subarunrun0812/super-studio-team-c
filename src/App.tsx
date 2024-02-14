@@ -22,8 +22,9 @@ function App() {
     <Router>
       <div>
         <nav style={{ borderBottom: '1px solid', marginBottom: '20px', paddingBottom: '10px' }}>
-        <Link to="/">ホーム</Link> | <Link to="/privacy">プライバシーポリシー</Link> | <Link to="/instagram-stats">インスタの統計</Link> | <Link to="/rewards">リワード</Link> | <Link to="/gifts">ギフト</Link>
+        <Link to="/">ホーム</Link> | <Link to="/privacy">プライバシーポリシー</Link> | <Link to="/instagram-stats">インスタの統計</Link>| <Link to="/gifts">ギフト</Link>
         </nav>
+        <Rewards />
         <Routes>
           <Route path="/" element={
             <>
