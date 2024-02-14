@@ -5,18 +5,18 @@ import { Card, CardMedia, CardContent, Typography, Grid } from '@mui/material';
 
 const giftOptions = [
   {
-    name: "ラッピングタイプA",
-    image: "https://github.com/kknowk/kknowk/assets/131352588/aebf5e0c-ee04-459c-84b9-99d8ed117167",
+    name: "エレガントタイプ",
+    image: "https://github.com/tatashir/images/assets/115047593/7fc65dc9-6812-4e3c-beb8-137c807f61b6",
     description: "エレガントなデザインで特別な日にぴったりのラッピングです。",
   },
   {
-    name: "ラッピングタイプB",
-    image: "https://github.com/kknowk/kknowk/assets/131352588/aebf5e0c-ee04-459c-84b9-99d8ed117167",
+    name: "カジュアルタイプ",
+    image: "https://github.com/tatashir/images/assets/115047593/10add1ea-5b79-4d73-b58f-bd052e38b9a2",
     description: "カジュアルなプレゼントに最適なラッピングです。",
   },
   {
-    name: "ラッピングタイプC",
-    image: "https://github.com/kknowk/kknowk/assets/131352588/aebf5e0c-ee04-459c-84b9-99d8ed117167",
+    name: "子供向けタイプ",
+    image: "https://github.com/tatashir/images/assets/115047593/e120ef90-4f73-4ed1-9cc9-107884993326",
     description: "子供向けの楽しいデザインのラッピングです。",
   },
 ];
@@ -33,7 +33,7 @@ const Gifts: React.FC = () => {
             <Card>
               <CardMedia
                 component="img"
-                height="140"
+                height="300"
                 image={gift.image}
                 alt={gift.name}
               />
