@@ -28,7 +28,6 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-            <InstagramRanking ranking={rankingData} />
               <Products />
               <CreatorInfo
                 name="[監修] 鳥羽 周作"
@@ -36,6 +35,7 @@ function App() {
                 imageUrl="https://github.com/kknowk/kknowk/assets/131352588/2a5f6c0f-e6dc-4d58-9dca-fbda5d33cfe6"
               />
               <SDGsInfo /> 
+              <InstagramRanking ranking={rankingData} />
               <div style={{ marginTop: '20px', textAlign: 'center', border: '1px solid', padding: '20px', fontSize: '1.2em' }}>
                 <p style={{ fontSize: '2em', marginBottom: '20px' }}>公式SNS</p>
                 <a href="https://www.instagram.com/futsunoshop/" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
