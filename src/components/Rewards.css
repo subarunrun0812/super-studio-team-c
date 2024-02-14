@@ -1,80 +1,89 @@
 /* src/components/Rewards.css */
 
 .rewards-container {
-    background: #f6f6f6;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .rewards-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #c89750;
-  }
-  
-  .status {
-    background: #00a862;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  
-  .points {
-    margin: 20px 0;
-    font-size: 2em;
-    color: #c89750;
-  }
-  
-  .rewards-progress-bar {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .progress-bar-outer {
-    height: 20px;
-    background: #e0e0e0;
-    border-radius: 10px;
-  }
-  
-  .progress-bar-inner {
-    height: 20px;
-    background: #facd60;
-    border-radius: 10px;
-  }
-  
-  .progress-bar-points {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-  }
-  
-  .progress-point {
-    position: relative;
-    top: -10px;
-    color: #333;
-  }
-  
-  .rewards-actions {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .btn-primary {
-    background: #00a862;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .btn-secondary {
-    background: none;
-  }  
+  background: #f6f6f6;
+  padding: 15px; /* reduced from 20px */
+  border-radius: 8px;
+  margin-bottom: 15px; /* reduced from 20px */
+  text-align: center;
+  font-size: 0.8em; /* scale down font sizes for all child elements */
+}
+
+.rewards-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c89750;
+}
+
+.status {
+  background: #00a862;
+  color: white;
+  padding: 4px 8px; /* slightly reduced padding */
+  border-radius: 15px; /* slightly reduced border radius */
+  font-weight: bold;
+}
+
+.points {
+  margin: 15px 0; /* reduced from 20px */
+  font-size: 1.6em; /* reduced from 2em */
+  color: #c89750;
+}
+
+.rewards-progress-bar {
+  position: relative;
+  margin-bottom: 15px; /* reduced from 20px */
+}
+
+.progress-bar-outer {
+  height: 15px; /* reduced from 20px */
+  background: #e0e0e0;
+  border-radius: 8px; /* reduced from 10px */
+}
+
+.progress-bar-inner {
+  height: 15px; /* reduced from 20px */
+  background: #facd60;
+  border-radius: 8px; /* reduced from 10px */
+}
+
+.progress-bar-points {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.progress-point {
+  position: relative;
+  top: -8px; /* adjusted for visual alignment */
+  color: #333;
+  font-size: 0.8em; /* reduced font size */
+}
+
+.rewards-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px; /* added margin at the top for spacing */
+}
+
+.btn-primary, .btn-secondary {
+  padding: 5px 15px; /* reduced padding */
+  border-radius: 15px; /* reduced border radius */
+  cursor: pointer;
+  font-size: 0.8em; /* reduced font size */
+}
+
+.btn-primary {
+  background: #00a862;
+  color: white;
+  border: none;
+}
+
+.btn-secondary {
+  background: none;
+  color: #333; /* added color for secondary button */
+  border: 1px solid #333; /* added border for secondary button */
+}
