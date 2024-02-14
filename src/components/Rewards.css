@@ -1,0 +1,80 @@
+/* src/components/Rewards.css */
+
+.rewards-container {
+    background: #f6f6f6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .rewards-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #B0B0B0;
+  }
+  
+  .status {
+    background: #00a862;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .points {
+    margin: 20px 0;
+    font-size: 2em;
+    color: #c89750;
+  }
+  
+  .rewards-progress-bar {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar-outer {
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  .progress-bar-inner {
+    height: 20px;
+    background: #facd60;
+    border-radius: 10px;
+  }
+  
+  .progress-bar-points {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  
+  .progress-point {
+    position: relative;
+    top: -10px;
+    color: #333;
+  }
+  
+  .rewards-actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn-primary {
+    background: #00a862;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary {
+    background: none;
+  }  

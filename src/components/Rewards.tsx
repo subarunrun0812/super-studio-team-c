@@ -1,37 +1,37 @@
 // src/components/Rewards.tsx
 
 import React from 'react';
-
-interface RewardProps {
-  level: string;
-  points: number;
-  benefits: string[];
-}
-
-const RewardLevel: React.FC<RewardProps> = ({ level, points, benefits }) => (
-  <div style={{ margin: '20px', padding: '20px', border: '1px solid #ccc', borderRadius: '10px' }}>
-    <h2>{level} - {points} ポイント</h2>
-    <ul>
-      {benefits.map(benefit => (
-        <li key={benefit}>{benefit}</li>
-      ))}
-    </ul>
-  </div>
-);
+import './Rewards.css'; // ここでスタイルシートをインポートします
 
 const Rewards: React.FC = () => {
-  const rewardsInfo = [
-    { level: 'ブロンズ', points: 100, benefits: ['無料ドリンクサイズアップ'] },
-    { level: 'シルバー', points: 300, benefits: ['無料ドリンク1杯', '無料ドリンクサイズアップ'] },
-    { level: 'ゴールド', points: 500, benefits: ['無料ドリンク2杯', '無料フード1品', '無料ドリンクサイズアップ'] },
-  ];
+  // 仮のポイント数とステータス
+  const points = 181.6;
+  const status = 'Green会員';
 
   return (
-    <div>
-      <h1>リワード</h1>
-      {rewardsInfo.map(info => (
-        <RewardLevel key={info.level} level={info.level} points={info.points} benefits={info.benefits} />
-      ))}
+    <div className="rewards-container">
+      <div className="rewards-header">
+        <h1>(ふつうの)ショップのリワード</h1>
+        <div className="status">{status}</div>
+      </div>
+      <div className="points">
+        <span className="points-total">{points}★</span>
+      </div>
+      <div className="rewards-progress-bar">
+        <div className="progress-bar-outer">
+          <div className="progress-bar-inner" style={{ width: `${(points / 400) * 100}%` }}></div>
+        </div>
+        <div className="progress-bar-points">
+          <span className="progress-point">30</span>
+          <span className="progress-point">100</span>
+          <span className="progress-point">150</span>
+          <span className="progress-point">400</span>
+        </div>
+      </div>
+      <div className="rewards-actions">
+        <button className="btn-primary">商品に交換</button>
+        <button className="btn-secondary">もっと見る</button>
+      </div>
     </div>
   );
 }
