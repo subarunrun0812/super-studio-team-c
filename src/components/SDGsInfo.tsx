@@ -10,14 +10,14 @@ const SDGsInfo: React.FC = () => {
       imageUrl: "https://github.com/kknowk/kknowk/assets/131352588/419f903e-a45d-4d4a-b9af-4058f3b51c0e"
     },
     {
-      title: "SDGsの4番",
-      description: "包括的かつ公正な質の高い教育をすべての人に提供し、生涯学習の機会を促進する。",
-      imageUrl: "https://github.com/kknowk/kknowk/assets/131352588/419f903e-a45d-4d4a-b9af-4058f3b51c0e"
+      title: "SDGsの7番",
+      description: "エネルギーを世界中の人々に そしてクリーンなものへ ",
+      imageUrl: "https://github.com/tatashir/images/assets/115047593/cebd052d-421a-4b91-83d2-95502e15af40"
     },
     {
-      title: "SDGsの5番",
-      description: "ジェンダー平等を達成し、すべての女性と少女のエンパワーメントを実現する。",
-      imageUrl: "https://github.com/kknowk/kknowk/assets/131352588/419f903e-a45d-4d4a-b9af-4058f3b51c0e"
+      title: "SDGsの13番",
+      description: "気候変動から地球を守るために、今すぐ行動を起こそう",
+      imageUrl: "https://github.com/tatashir/images/assets/115047593/c05e0e7b-1008-45cf-855e-7f7a7cc5ad05"
     }
   ];
 
@@ -27,7 +27,7 @@ const SDGsInfo: React.FC = () => {
         <Card key={index} sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
-            height="140"
+            height="300"
             image={info.imageUrl}
             alt={info.title}
           />

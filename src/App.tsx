@@ -28,7 +28,6 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <InstagramRanking ranking={rankingData} />
               <Products />
               <CreatorInfo
                 name="[監修] 鳥羽 周作"
