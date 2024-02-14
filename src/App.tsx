@@ -7,17 +7,17 @@ import Products from './Products';
 import InstagramStats from './components/InstagramStats'; // 新しいページコンポーネントをインポート
 import CreatorInfo from './components/CreatorInfo'; // コンポーネントをインポート
 import SDGsInfo from './components/SDGsInfo'; // コンポーネントをインポート
+import Gifts from './components/Gifts';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTwitter, faLine } from '@fortawesome/free-brands-svg-icons';
-
+import Rewards from './components/Rewards';
 
 function App() {
   return (
     <Router>
       <div>
         <nav style={{ borderBottom: '1px solid', marginBottom: '20px', paddingBottom: '10px' }}>
-          <Link to="/">ホーム</Link> | <Link to="/privacy">プライバシーポリシー</Link> | <Link to="/instagram-stats">インスタの統計</Link>
-
+        <Link to="/">ホーム</Link> | <Link to="/privacy">プライバシーポリシー</Link> | <Link to="/instagram-stats">インスタの統計</Link> | <Link to="/rewards">リワード</Link> | <Link to="/gifts">ギフト</Link>
         </nav>
         <Routes>
           <Route path="/" element={
@@ -45,6 +45,8 @@ function App() {
           } />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/instagram-stats" element={<InstagramStats />} />
+          <Route path="/rewards" element={<Rewards />} />
+          <Route path="/gifts" element={<Gifts />} />
         </Routes>
       </div>
     </Router>

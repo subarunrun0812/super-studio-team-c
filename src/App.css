@@ -37,6 +37,10 @@
   padding: 2em;
 }
 
+body {
+  background-color: #FFFFFF; /* 白色 */
+}
+
 .read-the-docs {
   color: #888;
 }
