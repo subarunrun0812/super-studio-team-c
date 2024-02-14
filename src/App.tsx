@@ -15,7 +15,7 @@ import Rewards from './components/Rewards';
 
 function App() {
   const rankingData = [
-    { category: "総いいね数一位", name: "ふつうのマヨネーズ", value: 10000 , imageUrl:"https://github.com/tatashir/images/assets/115047593/ec116142-4b87-4769-8f9c-8340dfd14334"},
+    { category: "総いいね数一位", name: "ふつうのマヨネーズ", value: 10000 , imageUrl:"https://github.com/tatashir/images/assets/115047593/2af2e487-dfb0-4ca6-8bf0-484aa6986622"},
     // 他のカテゴリのランキングデータも同様に
   ];
   return (
