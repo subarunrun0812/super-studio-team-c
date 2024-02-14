@@ -8,17 +8,23 @@ import InstagramStats from './components/InstagramStats'; // 新しいページ�
 import CreatorInfo from './components/CreatorInfo'; // コンポーネントをインポート
 import SDGsInfo from './components/SDGsInfo'; // コンポーネントをインポート
 import Gifts from './components/Gifts';
+import InstagramRanking from './components/InstagramRanking';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTwitter, faLine } from '@fortawesome/free-brands-svg-icons';
 import Rewards from './components/Rewards';
 
 function App() {
+  const rankingData = [
+    { category: "総いいね数一位", name: "ふつうのマヨネーズ", value: 10000 , imageUrl:"https://github.com/tatashir/images/assets/115047593/ec116142-4b87-4769-8f9c-8340dfd14334"},
+    // 他のカテゴリのランキングデータも同様に
+  ];
   return (
     <Router>
       <div>
         <nav style={{ borderBottom: '1px solid', marginBottom: '20px', paddingBottom: '10px' }}>
         <Link to="/">ホーム</Link> | <Link to="/privacy">プライバシーポリシー</Link> | <Link to="/instagram-stats">インスタの統計</Link> | <Link to="/rewards">リワード</Link> | <Link to="/gifts">ギフト</Link>
         </nav>
+        <InstagramRanking ranking={rankingData} />
         <Routes>
           <Route path="/" element={
             <>
