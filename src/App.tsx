@@ -24,10 +24,10 @@ function App() {
         <nav style={{ borderBottom: '1px solid', marginBottom: '20px', paddingBottom: '10px' }}>
         <Link to="/">ホーム</Link> | <Link to="/privacy">プライバシーポリシー</Link> | <Link to="/instagram-stats">インスタの統計</Link> | <Link to="/rewards">リワード</Link> | <Link to="/gifts">ギフト</Link>
         </nav>
-        <InstagramRanking ranking={rankingData} />
         <Routes>
           <Route path="/" element={
             <>
+            <InstagramRanking ranking={rankingData} />
               <Products />
               <CreatorInfo
                 name="[監修] 鳥羽 周作"
